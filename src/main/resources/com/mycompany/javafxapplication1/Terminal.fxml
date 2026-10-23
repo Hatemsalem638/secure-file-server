@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.input.KeyEvent?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="root" xmlns:fx="http://javafx.com/fxml" fx:controller="com.mycompany.javafxapplication1.Terminal">
+    <children>
+        <HBox alignment="CENTER_LEFT">
+            <TextField fx:id="inputTextField" onKeyPressed="#handleKeyPress" promptText="Enter command..." />
+            <Button fx:id="exitterminal" text="Exit" onAction="#exitAction" />
+        </HBox>
+        <TextArea fx:id="outputTextArea" prefHeight="200.0" wrapText="true" editable="false" />
+    </children>
+</VBox>

@@ -1,0 +1,15 @@
+# Build output
+target/
+out/
+
+# Local data created when the app runs
+*.db
+.salt
+audit.txt
+audit.log
+
+# IDE
+.idea/
+.vscode/
+*.iml
+nbproject/private/
